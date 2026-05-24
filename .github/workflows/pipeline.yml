@@ -1,0 +1,41 @@
+name: 🚀 Pipeline
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    uses: vdw-dk/managed-pipelines/.github/workflows/reusable-validate.yml@main
+    secrets: inherit
+
+  ci-java:
+    needs: validate
+    uses: vdw-dk/managed-pipelines/.github/workflows/reusable-ci-java.yml@main
+    with:
+      app_path: app/prompter-api
+    secrets: inherit
+
+  ci-code:
+    needs: validate
+    uses: vdw-dk/managed-pipelines/.github/workflows/reusable-ci-code.yml@main
+    secrets: inherit
+
+  ci-infra:
+    needs: validate
+    uses: vdw-dk/managed-pipelines/.github/workflows/reusable-ci-infra.yml@main
+    secrets: inherit
+
+  status:
+    if: always()
+    needs: [validate, ci-java, ci-code, ci-infra]
+    uses: vdw-dk/managed-pipelines/.github/workflows/pipeline-status.yml@main
+    with:
+      validate_result: ${{ needs.validate.result }}
+      ci_code_result:  ${{ needs.ci-code.result }}
+      ci_infra_result: ${{ needs.ci-infra.result }}
+    secrets: inherit

@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: prompter-api
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/prompter}
+    username: ${SPRING_DATASOURCE_USERNAME:prompter}
+    password: ${SPRING_DATASOURCE_PASSWORD:prompter}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      probes:
+        enabled: true
