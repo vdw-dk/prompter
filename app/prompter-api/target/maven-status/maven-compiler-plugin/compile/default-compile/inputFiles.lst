@@ -1,1 +1,3 @@
 /Users/hhvdw/Projects/prompter/app/prompter-api/src/main/java/dk/vdw/prompter/PrompterApiApplication.java
+/Users/hhvdw/Projects/prompter/app/prompter-api/src/main/java/dk/vdw/prompter/domain/Prompt.java
+/Users/hhvdw/Projects/prompter/app/prompter-api/src/main/java/dk/vdw/prompter/domain/PromptRepository.java

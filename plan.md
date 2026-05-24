@@ -14,31 +14,32 @@ Build a centralized Spring Boot service (`prompter-api`) acting as a BFF, a micr
 - **Images:** Chainguard for security and minimalism.
 
 ## Feature Roadmap
-- [ ] Layer 3 Database Infrastructure
-- [ ] Layer 4 Application Infrastructure
-- [ ] Spring Boot API Foundation (BFF)
-- [ ] Micro-frontend Skeleton
+- [x] Layer 3 Database Infrastructure
+- [x] Layer 4 Application Infrastructure
+- [x] Spring Boot API Foundation (BFF)
+- [x] Micro-frontend Skeleton
+- [x] Prompt Domain Model and Repository (#11, #12, #13)
 - [ ] Prompt CRUD operations
 - [ ] Versioning support
 
 ## PR Status
 | Branch | PR | Status |
 |--------|----|--------|
-| `infrastructure/prompter/setup` | | 🚧 Draft |
+| `app/prompter/domain-model` | | 🚧 Draft |
 
 ## Session Summary
-**Branch**  : `infrastructure/prompter/setup`
-**Goal**    : Initialize the prompter project structure and core infrastructure.
-**Scope**   : Root docs, Layer 3/4 infra skeletons, Spring Boot API skeleton.
-**Out**     : Functional UI implementation, business logic for prompt management.
-**Issues**  : #1, #2, #3, #4, #5
+**Branch**  : `app/prompter/domain-model`
+**Goal**    : Implement the Prompt domain entity and repository with UUID support.
+**Scope**   : Prompt entity, PromptRepository, Integration tests.
+**Out**     : REST Controller, Service layer.
+**Issues**  : #11, #12, #13
 
 ## Current Status
-Initialized project structure, infrastructure skeletons, and application skeletons. All initial task and test issues verified.
+Implemented Prompt domain model and verified with integration tests.
 
 ## Next Steps
-- Implement Prompt Domain Model and Repository.
-- Create basic REST API for Prompt Management.
+- Create Application Services for Prompt Management.
+- Implement REST API for CRUD operations.
 - Connect Micro-frontend to BFF.
 
 ## Blockers

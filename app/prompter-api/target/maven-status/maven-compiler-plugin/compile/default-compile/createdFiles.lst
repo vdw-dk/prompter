@@ -1,1 +1,3 @@
+dk/vdw/prompter/domain/Prompt.class
+dk/vdw/prompter/domain/PromptRepository.class
 dk/vdw/prompter/PrompterApiApplication.class
