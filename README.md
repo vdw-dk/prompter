@@ -20,7 +20,12 @@ TBD
 - Micro-frontend UI
 - PostgreSQL persistence (Layer 3)
 
-### 2026-05-24: Domain Model Implementation
+### 2026-05-25: Application & API Implementation
+- Implemented `PromptService` for business logic and DTO mapping.
+- Created `PromptController` with REST endpoints for CRUD and version management.
+- Added `GlobalExceptionHandler` for standard API error responses.
+- Resolved Spring Boot 4.0.6 test-starter modularity and Jackson 3.x compatibility issues.
+- Verified implementation with 6 integration tests (domain + controller).
 - Implemented `Prompt` domain entity with UUID ID, semantic versioning, and JSONB metadata.
 - Created `PromptRepository` for persistence.
 - Verified persistence with integration tests using H2.

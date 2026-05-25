@@ -19,28 +19,28 @@ Build a centralized Spring Boot service (`prompter-api`) acting as a BFF, a micr
 - [x] Spring Boot API Foundation (BFF)
 - [x] Micro-frontend Skeleton
 - [x] Prompt Domain Model and Repository (#11, #12, #13)
-- [ ] Prompt CRUD operations
-- [ ] Versioning support
+- [x] Prompt CRUD operations (#14, #15, #16, #17)
+- [ ] Versioning support (Enhanced)
 
 ## PR Status
 | Branch | PR | Status |
 |--------|----|--------|
-| `app/prompter/domain-model` | | 🚧 Draft |
+| `app/prompter/api-implementation` | | 🚧 Draft |
 
 ## Session Summary
-**Branch**  : `app/prompter/domain-model`
-**Goal**    : Implement the Prompt domain entity and repository with UUID support.
-**Scope**   : Prompt entity, PromptRepository, Integration tests.
-**Out**     : REST Controller, Service layer.
-**Issues**  : #11, #12, #13
+**Branch**  : `app/prompter/api-implementation`
+**Goal**    : Implement Application Services and REST API.
+**Scope**   : PromptService, PromptController, DTOs, Exception Handling, MockMvc tests.
+**Out**     : Frontend connection to BFF.
+**Issues**  : #14, #15, #16, #17
 
 ## Current Status
-Implemented Prompt domain model and verified with integration tests.
+Implemented Application and API layers. Verified with integration tests. Handled Spring Boot 4 modularity and Jackson compatibility.
 
 ## Next Steps
-- Create Application Services for Prompt Management.
-- Implement REST API for CRUD operations.
 - Connect Micro-frontend to BFF.
+- Implement UI for prompt listing and creation.
+- Add support for specific agent prompt templates.
 
 ## Blockers
 None.

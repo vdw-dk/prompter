@@ -1,3 +1,9 @@
-dk/vdw/prompter/domain/Prompt.class
+dk/vdw/prompter/presentation/rest/PromptController.class
+dk/vdw/prompter/presentation/rest/GlobalExceptionHandler.class
 dk/vdw/prompter/domain/PromptRepository.class
+dk/vdw/prompter/presentation/rest/dto/PromptRequest.class
 dk/vdw/prompter/PrompterApiApplication.class
+dk/vdw/prompter/domain/Prompt.class
+dk/vdw/prompter/application/service/PromptService.class
+dk/vdw/prompter/application/service/PromptService$ResourceNotFoundException.class
+dk/vdw/prompter/presentation/rest/dto/PromptResponse.class
