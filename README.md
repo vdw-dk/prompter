@@ -20,6 +20,12 @@ TBD
 - Micro-frontend UI
 - PostgreSQL persistence (Layer 3)
 
+### 2026-05-25: Frontend Implementation
+- Implemented React micro-frontend using TypeScript and Vite.
+- Created `PromptList` and `PromptEditor` components for managing AI prompts.
+- Built a TypeScript API client for integration with the Spring Boot BFF.
+- Integrated frontend state management with CRUD operations.
+
 ### 2026-05-25: Application & API Implementation
 - Implemented `PromptService` for business logic and DTO mapping.
 - Created `PromptController` with REST endpoints for CRUD and version management.

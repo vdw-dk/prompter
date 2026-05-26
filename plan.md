@@ -20,22 +20,23 @@ Build a centralized Spring Boot service (`prompter-api`) acting as a BFF, a micr
 - [x] Micro-frontend Skeleton
 - [x] Prompt Domain Model and Repository (#11, #12, #13)
 - [x] Prompt CRUD operations (#14, #15, #16, #17)
-- [ ] Versioning support (Enhanced)
+- [x] Frontend Implementation (#18, #19, #20, #21)
+- [ ] Versioning support (Enhanced UI)
 
 ## PR Status
 | Branch | PR | Status |
 |--------|----|--------|
-| `app/prompter/api-implementation` | | 🚧 Draft |
+| `app/prompter/frontend-implementation` | | 🚧 Draft |
 
 ## Session Summary
-**Branch**  : `app/prompter/api-implementation`
-**Goal**    : Implement Application Services and REST API.
-**Scope**   : PromptService, PromptController, DTOs, Exception Handling, MockMvc tests.
-**Out**     : Frontend connection to BFF.
-**Issues**  : #14, #15, #16, #17
+**Branch**  : `app/prompter/frontend-implementation`
+**Goal**    : Implement the Prompter UI and connect to BFF.
+**Scope**   : React components, API client, State management.
+**Out**     : CD pipeline setup.
+**Issues**  : #18, #19, #20, #21
 
 ## Current Status
-Implemented Application and API layers. Verified with integration tests. Handled Spring Boot 4 modularity and Jackson compatibility.
+Implemented the frontend micro-frontend and integrated it with the BFF API. Verified CRUD operations and state management.
 
 ## Next Steps
 - Connect Micro-frontend to BFF.
