@@ -14,32 +14,34 @@ Build a centralized Spring Boot service (`prompter-api`) acting as a BFF, a micr
 - **Images:** Chainguard for security and minimalism.
 
 ## Feature Roadmap
-- [ ] Layer 3 Database Infrastructure
-- [ ] Layer 4 Application Infrastructure
-- [ ] Spring Boot API Foundation (BFF)
-- [ ] Micro-frontend Skeleton
-- [ ] Prompt CRUD operations
-- [ ] Versioning support
+- [x] Layer 3 Database Infrastructure
+- [x] Layer 4 Application Infrastructure
+- [x] Spring Boot API Foundation (BFF)
+- [x] Micro-frontend Skeleton
+- [x] Prompt Domain Model and Repository (#11, #12, #13)
+- [x] Prompt CRUD operations (#14, #15, #16, #17)
+- [x] Frontend Implementation (#18, #19, #20, #21)
+- [ ] Versioning support (Enhanced UI)
 
 ## PR Status
 | Branch | PR | Status |
 |--------|----|--------|
-| `infrastructure/prompter/setup` | | 🚧 Draft |
+| `app/prompter/frontend-implementation` | | 🚧 Draft |
 
 ## Session Summary
-**Branch**  : `infrastructure/prompter/setup`
-**Goal**    : Initialize the prompter project structure and core infrastructure.
-**Scope**   : Root docs, Layer 3/4 infra skeletons, Spring Boot API skeleton.
-**Out**     : Functional UI implementation, business logic for prompt management.
-**Issues**  : #1, #2, #3, #4, #5
+**Branch**  : `app/prompter/frontend-implementation`
+**Goal**    : Implement the Prompter UI and connect to BFF.
+**Scope**   : React components, API client, State management.
+**Out**     : CD pipeline setup.
+**Issues**  : #18, #19, #20, #21
 
 ## Current Status
-Initialized project structure, infrastructure skeletons, and application skeletons. All initial task and test issues verified.
+Implemented the frontend micro-frontend and integrated it with the BFF API. Verified CRUD operations and state management.
 
 ## Next Steps
-- Implement Prompt Domain Model and Repository.
-- Create basic REST API for Prompt Management.
 - Connect Micro-frontend to BFF.
+- Implement UI for prompt listing and creation.
+- Add support for specific agent prompt templates.
 
 ## Blockers
 None.

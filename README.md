@@ -20,8 +20,21 @@ TBD
 - Micro-frontend UI
 - PostgreSQL persistence (Layer 3)
 
-## Implementation Summary
-### 2026-05-23: Initial Setup
+### 2026-05-25: Frontend Implementation
+- Implemented React micro-frontend using TypeScript and Vite.
+- Created `PromptList` and `PromptEditor` components for managing AI prompts.
+- Built a TypeScript API client for integration with the Spring Boot BFF.
+- Integrated frontend state management with CRUD operations.
+
+### 2026-05-25: Application & API Implementation
+- Implemented `PromptService` for business logic and DTO mapping.
+- Created `PromptController` with REST endpoints for CRUD and version management.
+- Added `GlobalExceptionHandler` for standard API error responses.
+- Resolved Spring Boot 4.0.6 test-starter modularity and Jackson 3.x compatibility issues.
+- Verified implementation with 6 integration tests (domain + controller).
+- Implemented `Prompt` domain entity with UUID ID, semantic versioning, and JSONB metadata.
+- Created `PromptRepository` for persistence.
+- Verified persistence with integration tests using H2.
 - Initialized repository structure.
 - Defined Layer 3 (DB) and Layer 4 (App) infrastructure layout.
 - Planned Spring Boot API and MFE initialization.

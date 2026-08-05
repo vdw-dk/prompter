@@ -1,1 +1,8 @@
 /Users/hhvdw/Projects/prompter/app/prompter-api/src/main/java/dk/vdw/prompter/PrompterApiApplication.java
+/Users/hhvdw/Projects/prompter/app/prompter-api/src/main/java/dk/vdw/prompter/application/service/PromptService.java
+/Users/hhvdw/Projects/prompter/app/prompter-api/src/main/java/dk/vdw/prompter/domain/Prompt.java
+/Users/hhvdw/Projects/prompter/app/prompter-api/src/main/java/dk/vdw/prompter/domain/PromptRepository.java
+/Users/hhvdw/Projects/prompter/app/prompter-api/src/main/java/dk/vdw/prompter/presentation/rest/GlobalExceptionHandler.java
+/Users/hhvdw/Projects/prompter/app/prompter-api/src/main/java/dk/vdw/prompter/presentation/rest/PromptController.java
+/Users/hhvdw/Projects/prompter/app/prompter-api/src/main/java/dk/vdw/prompter/presentation/rest/dto/PromptRequest.java
+/Users/hhvdw/Projects/prompter/app/prompter-api/src/main/java/dk/vdw/prompter/presentation/rest/dto/PromptResponse.java
