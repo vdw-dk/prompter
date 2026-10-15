@@ -1,0 +1,6 @@
+# MCP servers this project expects, one per line.
+# Provision them with: mcp-scope.sh apply
+# Secret-free by design — the server config and its token live in local scope
+# (~/.claude.json), never in git.
+
+claude-design
